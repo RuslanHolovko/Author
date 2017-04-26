@@ -1,0 +1,416 @@
+@import 'fonts.scss';
+@import 'adaptive-menu.scss';
+@import 'slick.scss';
+@import 'slick-theme.scss';
+@import 'font-awesome/font-awesome.scss';
+
+/*
+================================================================================
+|                                     reset                                     |
+================================================================================
+*/
+body{ margin:0px; padding:0px; font-family: 'RobotoRegular',Tahoma ,Arial, sans-serif;background-color:#FFFFFF; height:100%; position:relative; font-size:13px!important; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+/*MAIN*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, 
+form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {display: block;}
+body {line-height: 1;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
+table {border-collapse: collapse; border-width: 0px; padding: 0px; margin: 0px;}
+html{height:100%; -webkit-text-size-adjust: none;-ms-text-size-adjust: none;}
+input, textarea {color: #333;  outline:none; border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; }
+input[type="button"], input[type="submit"], button {cursor: pointer}
+td{margin: 0px; padding: 0px;}
+form{padding: 0px; margin: 0px;}
+a{color: #000100; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; -ms-transition: all 0.2s linear; -webkit-transition: all 0.2s linear; transition: all 0.2s linear; text-decoration:none; outline:none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0); -webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+input[type=submit], input[type=button], button{-webkit-appearance: none; outline: none;}
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+
+a:visited,
+a:focus,
+a:active{
+	text-decoration: none;
+	outline: none;
+}
+
+li{
+	list-style-type: none;
+}
+
+/*CLEARFIX==================================================*/
+.clearfix:before,
+.clearfix:after {
+   content: "";
+   display: table;
+}
+
+.clearfix:after {
+   clear: both;
+}
+/*CLEARFIX==================================================*/
+
+/*VARIABLES=================================================*/
+
+$maincolor:#49cbcd;
+$h2color:#485460;
+$white:#fff;
+
+/*MAIN STYLES===============================================*/
+.wrapper{
+	overflow: hidden;
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+nav{
+	z-index: 100;
+
+	ul{
+		float: right;
+	}
+
+	li{
+		float: left;
+
+		a{
+			color: #000;
+			padding: 41px 20px;
+			font-size: 17px;
+			font-family: 'OpenSans-Regular';
+			display: block;
+		}
+		:hover{
+			background: #f8f9fb;
+			border-bottom: 3px solid $maincolor;
+			-webkit-transition: .3s background;
+			transition: .3s background;
+			cursor: pointer;
+		}
+
+	}
+
+}
+
+.click-nav-link{
+	background: #f8f9fb;
+	border-bottom: 3px solid $maincolor;	
+}
+
+header{
+	height: 102px;
+	background: $white;
+	z-index: 1;
+
+	.logo{
+		font-family:'Lobster-Regular';
+		font-size: 43px;
+		margin: 30px 0 0 20px;
+		width: 122px;
+
+		a{
+			color: $maincolor;
+			display: block;
+		} 
+	}
+}
+
+.headhesive{
+	background: #000;
+	position: fixed;
+	width: 100%;
+	transform: translateY(-640px);
+}
+
+.headhesive--stick{
+	background: rgba(255,255,255,0.8);
+	box-shadow: 0 0 1px #fff;
+  transform: translateY(0);
+  transition: .3s;
+  z-index: 100;
+}
+
+.sl-slick{
+	color: #fff;
+	text-align: center;
+	img{
+		width: 100%;
+	}
+
+	.slick-1{
+		outline: none;
+		border: none;
+		position: relative;
+	}
+
+	h1{
+		font-size: 63px;
+		display: inline-block;
+		position: absolute;
+		top: 153px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 675px;
+		font-family: 'OpenSans-Semibold';
+	}
+
+	p{
+		position: absolute;
+		display: inline-block;
+		top: 252px;
+		font-family: 'OpenSans-Regular';
+		font-size: 23px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 675px;
+		line-height: 37px;
+	}
+
+	.learn{
+		background: transparent;
+		position: absolute;
+		color: #fff;
+		top: 405px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		padding: 13px 28px;
+		border-radius: 5px;
+		border: 3px solid #fff;
+		width: 231px;
+		font-size: 26px;
+		font-family: OpenSans-Semibold;
+		transition: .3s;
+	}
+	.learn:hover{
+		background: rgba(163, 208, 191, 0.61);
+	}
+}
+
+.team{
+	position: relative;
+	font-family: 'OpenSans-Regular';
+	color: #4e525d;
+	h2{
+		position: absolute;
+		top: 107px;
+		right: 0;
+		left: 0;
+		margin: auto;
+		font-size: 42px;
+		width: 200px;
+	}
+
+	.team__inner{
+		text-align: center;
+		box-sizing: border-box;
+		width: 25%;
+		outline: 1px solid #fff;
+		float: left;
+		margin-top: 280px;
+
+		.circle{
+			position: relative;
+			display: inline-block;
+			height: 200px;
+			width: 200px;
+			border-radius: 100%;
+			background: #eeeef0;
+		}
+
+		.circle:hover:after{
+			position: absolute;
+			content: '+';
+			font-family: 'OpenSans-ExtraBold';
+			font-size: 85px;
+			color: #f46d6d;
+			display: block;
+		
+			top: 28%;
+			left: 38%;
+			cursor: pointer;
+		
+			
+		}
+
+		.name{
+			font-size: 22px;
+			margin-top: 70px;
+		}
+
+		.team__descr{
+			font-size: 14px;
+			margin-top: 10px;
+		}
+
+		.text{
+			line-height: 26px;
+			margin-top: 30px;
+			padding: 0 20px;
+		}
+
+
+	}
+}
+
+.margin_wrapper{
+	margin-top: 100px;
+	padding: 90px 15px;
+	padding-left: 18px;
+}
+
+.main-wrapper{
+	background: #f1f1f1;
+}
+
+.plans{
+	width: 30%;
+	background: #c3c3c3;
+	text-align: center;
+
+	h3{
+		width: 100%;
+		background: $h2color;
+		padding: 25px 0;
+		color: #fff;
+		font-size:26px;
+		font-family: 'OpenSans-Regular';
+		transition: .3s; 
+	}
+
+	
+	ul li{
+		border-bottom: 1px solid #ecf0f1;
+		padding: 20px 0;
+		background: #fff;
+		font-size: 14px;
+	}
+
+	ul li:first-child{
+		padding: 25px 0;
+		background: #f8f9fb;
+		font-size: 20px;
+		color: #485460;
+	}
+
+	ul li:last-child{
+		padding: 30px 0;
+		background: #f8f9fb;
+	}
+
+	.buy{
+		color: #fff;
+		padding: 15px 50px;
+		background: #788492;
+		border: none;
+		outline: none;
+		border-radius: 3px;
+		transition: .3s;
+	}
+
+
+
+}
+
+.backg{
+	background: #49cbcd!important;
+}
+
+.fl-right,
+.fl-right-2{
+	float: right;
+}
+
+.fl-right-2{
+	margin-right: 5%;
+}
+
+
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\MEDIA\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.mobile-inner-header-icon{
+	display: block;
+}
+
+.mobile-inner-nav{
+	display: none;
+}
+
+.navigation li{
+	background: rgba(163, 208, 191, 0.61);
+	margin: 0 45px 0 0;
+	float: none;
+	border-bottom: 1px solid #fff;
+
+	a{
+		padding: 14px 100px;
+	}
+}
+
+.sl-slick{
+	h1{
+	font-size: 45px;
+	width: 481px;
+}
+}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
