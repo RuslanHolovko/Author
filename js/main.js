@@ -58,3 +58,6 @@
   $(this).toggleClass("backg");
   $(".premium").toggleClass("backg");
 });
+
+ //NAVIGATION
+ $('.navigation a').mPageScroll2id();
