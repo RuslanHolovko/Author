@@ -544,7 +544,6 @@ footer{
  	top: 62%;
   font-size: 16px;
   width: 160px;
-  padding: 7px 0;
   border: 2px solid #fff;
 }
 }
@@ -598,17 +597,16 @@ footer{
 }
 
  p{
+ 	top: 30%;
 	font-size: 12px;
 	line-height: 14px;
 	width: 100%;
 }
 
  .learn {
-  font-size: 13px;
-  width: 140px;
-  padding: 7px 0;
+  font-size: 16px;
   border: 1px solid #fff;
-  top: 62%;
+  top: 50%;
 }
 }
 
@@ -684,6 +682,13 @@ footer{
   width: 250%;
   height: 100vh;
 }
+
+.plans {
+	width: 100%;
+	float: right;
+	border-left: 1px solid #ecf0f1;
+	border-right: 1px solid #ecf0f1;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -694,19 +699,11 @@ footer{
 }
 
  p{
- 	top: 40%;
 	font-size: 10px;
 	line-height: 13px;
 	width: 100%;
 }
 
- .learn {
-  font-size: 10px;
-  width: 100px;
-  padding: 5px 0;
-  border: 1px solid #fff;
-  top: 65%;
-}
 }
 
 .slick-prev {
