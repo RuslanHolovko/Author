@@ -9,7 +9,7 @@
 |                                     reset                                     |
 ================================================================================
 */
-body{ margin:0px; padding:0px; font-family: 'RobotoRegular',Tahoma ,Arial, sans-serif;background-color:#FFFFFF; height:100%; position:relative; font-size:13px!important; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+body{ margin:0px; padding:0px; font-family: 'OpenSans-Regular';background-color:#FFFFFF; height:100%; position:relative; font-size:13px!important; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 /*MAIN*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, 
@@ -22,7 +22,7 @@ blockquote, q {quotes: none;}
 blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
 table {border-collapse: collapse; border-width: 0px; padding: 0px; margin: 0px;}
 html{height:100%; -webkit-text-size-adjust: none;-ms-text-size-adjust: none;}
-input, textarea {color: #333;  outline:none; border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; }
+input, textarea {color: #333;  outline:none; border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; font-family: 'OpenSans-Regular'; font-size: 16px; }
 input[type="button"], input[type="submit"], button {cursor: pointer}
 td{margin: 0px; padding: 0px;}
 form{padding: 0px; margin: 0px;}
@@ -314,12 +314,141 @@ header{
 		transition: .3s;
 	}
 
-
-
 }
 
 .backg{
 	background: #49cbcd!important;
+}
+
+footer{
+	position: relative;
+	background: url(../img/bg-footer.jpg);
+	background-position: top center;
+	background-size: cover;
+	min-height: 700px;
+	padding: 100px 15px;
+
+	h2{
+		position: absolute;
+		color: #fff;
+    top: 107px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    font-size: 42px;
+    width: 235px;
+	}
+
+	.inner__footer{
+		width: 50%;
+		text-align: left;
+		margin-top: 140px;
+		margin-left: 14%;
+	}
+
+	.inner__footer-right{
+		float: right;
+	}
+
+	.get_in_touch{
+		font-size: 24px;
+		color: #fff;
+	}
+
+	.footer__descr{
+		font-size: 14px;
+		line-height: 21px;
+		color: #adadad;
+		margin-top: 10px;
+	}
+
+	.twitter,
+	.facebook,
+	.google_plus{
+		display: inline-block;
+		margin-top: 43px;
+		margin-right: 21px;
+		padding: 9px 16px;
+		border-radius: 100%;
+		color: #fff;
+		font-size: 23px;
+	}
+
+	.facebook{
+		background: #3b5997;
+	}
+
+	.twitter{
+		background: #3ec2f3;
+		padding: 9px 11px;
+	}
+
+	.google_plus{
+		background: #e44c41;
+		padding: 9px 7px;
+
+	}
+
+	.info{
+		color: #bface2;
+		line-height: 22px;
+		font-family: "MyriadProRegular";
+		margin-top: 20px;
+	}
+
+	.footer__infomail{
+		color: #bface2;
+		margin-top: 3px;
+		display: inline-block;
+	}
+}
+
+.inner__footer-right{
+	input[type=name],
+	input[type=email]{
+		background: #fff;
+		padding: 10px;
+		width: 47%;
+		color: #c1c1c1;
+		border-radius: 3px;
+		outline: none;
+		border: none;
+	}
+
+	form{
+		width: 62%;
+		float: right;
+		margin-right: 25%;
+	}
+
+	input[type=email]{
+		margin-left: 30px;
+	}
+
+	textarea{
+		padding: 10px;
+		display: block;
+		margin-top: 30px;
+		width: 100%;
+		border-radius: 3px;
+		background: #fff;
+		outline: none;
+		border: none;
+		height: 180px;
+	}
+
+	button{
+		width: 30%;
+		background: $maincolor;
+		border: none;
+		font-size: 22px;
+		outline: none;
+		border-radius: 3px;
+		color: #fff;
+		padding: 10px;
+		margin-top: 30px;
+		float: right;
+	}
 }
 
 .fl-right,
