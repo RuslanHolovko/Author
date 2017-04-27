@@ -199,19 +199,19 @@ header{
 	color: #4e525d;
 	h2{
 		position: absolute;
-		top: 107px;
+		top: 16%;
 		right: 0;
 		left: 0;
 		margin: auto;
 		font-size: 42px;
-		width: 200px;
+		width: 100%;
+		text-align: center;
 	}
 
 	.team__inner{
 		text-align: center;
 		box-sizing: border-box;
 		width: 25%;
-		outline: 1px solid #fff;
 		float: left;
 		margin-top: 280px;
 
@@ -549,6 +549,45 @@ footer{
 }
 }
 
+.no-margin{
+	margin-top: 10%!important; 
+}
+
+.team .team__inner {
+	text-align: center;
+	box-sizing: border-box;
+	width: 50%;
+	outline: 1px solid #fff;
+	float: left;
+	margin-top: 250px;
+}
+
+.margin_wrapper {
+	margin-top: 100px;
+	padding: 90px 0px;
+	padding-left: 0;
+}
+
+.plans {
+	width: 33.5%;
+}
+
+.fl-right-2 {
+	margin-right: 0%;
+	border-left: 1px solid #ecf0f1;
+	border-right: 1px solid #ecf0f1;
+}
+
+.team h2 {
+	top: 8%;
+	font-size: 38px;
+}
+
+.sl-slick img {
+  width: 160%;
+  height: 87vh!important;
+}
+
 }
 
 /* Small Devices, Tablets */
@@ -605,6 +644,46 @@ footer{
 	height: 10px;
 	width: 1px;
 }
+
+.team h2 {
+	top: 6%;
+	font-size: 30px;
+}
+
+.team .team__inner {
+	margin-top: 20%;
+}
+
+.team .team__inner .circle {
+	height: 150px;
+	width: 150px;
+}
+
+.team .team__inner .circle:hover:after {
+	font-size: 65px;
+}
+
+.sl-slick img {
+  width: 200%;
+  height: 100vh;
+}
+
+}
+
+@media only screen and (max-width : 600px){
+.team .team__inner {
+	width: 100%;
+	margin-top: 33%;
+}
+
+.team h2 {
+	top: 5%;
+}
+
+.sl-slick img {
+  width: 250%;
+  height: 100vh;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -645,6 +724,16 @@ footer{
 
 header .logo a {
 	font-size: 35px;
+}
+
+.team h2 {
+	top: 3%;
+	font-size: 23px ;
+}
+
+.sl-slick img {
+  width: 290%;
+ 
 }
 }
 
