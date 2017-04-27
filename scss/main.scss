@@ -583,8 +583,8 @@ footer{
 }
 
 .sl-slick img {
-  width: 160%;
-  height: 100vh!important;
+
+  height: 100%!important;
 }
 
 }
@@ -662,16 +662,15 @@ footer{
 }
 
 .sl-slick img {
-  width: 200%;
+
 }
 
 }
 
 @media only screen and (max-width : 738px){
-	.sl-slick img {
-		width: 50%;
-		height: 100vh!important;
-	}
+.sl-slick img {
+
+}
 }
 
 @media only screen and (max-width : 600px){
@@ -684,9 +683,7 @@ footer{
 	top: 5%;
 }
 
-.sl-slick img {
-  width: 250%;
-}
+
 
 .plans {
 	width: 100%;
@@ -733,10 +730,7 @@ header .logo a {
 	font-size: 23px ;
 }
 
-.sl-slick img {
-  width: 290%;
- 
-}
+
 }
 
 /* Custom, iPhone Retina */

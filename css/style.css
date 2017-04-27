@@ -3215,8 +3215,7 @@ footer {
     font-size: 38px; }
 
   .sl-slick img {
-    width: 160%;
-    height: 100vh !important; } }
+    height: 100% !important; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .sl-slick h1 {
@@ -3271,14 +3270,7 @@ footer {
     width: 150px; }
 
   .team .team__inner .circle:hover:after {
-    font-size: 65px; }
-
-  .sl-slick img {
-    width: 200%; } }
-@media only screen and (max-width: 738px) {
-  .sl-slick img {
-    width: 50%;
-    height: 100vh !important; } }
+    font-size: 65px; } }
 @media only screen and (max-width: 600px) {
   .team .team__inner {
     width: 100%;
@@ -3286,9 +3278,6 @@ footer {
 
   .team h2 {
     top: 5%; }
-
-  .sl-slick img {
-    width: 250%; }
 
   .plans {
     width: 100%;
@@ -3319,10 +3308,7 @@ footer {
 
   .team h2 {
     top: 3%;
-    font-size: 23px; }
-
-  .sl-slick img {
-    width: 290%; } }
+    font-size: 23px; } }
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
   header .logo a {
