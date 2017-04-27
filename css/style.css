@@ -3215,6 +3215,7 @@ footer {
     font-size: 38px; }
 
   .sl-slick img {
+    width: 141% !important;
     height: 100% !important; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
