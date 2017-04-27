@@ -3277,8 +3277,8 @@ footer {
     width: 200%; } }
 @media only screen and (max-width: 738px) {
   .sl-slick img {
-    width: 100%;
-    height: 75vh !important; } }
+    width: 50%;
+    height: 100vh !important; } }
 @media only screen and (max-width: 600px) {
   .team .team__inner {
     width: 100%;
