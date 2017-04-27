@@ -3280,7 +3280,7 @@ footer {
   .sl-slick img {
     width: 140%;
     height: 100vh; } }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 598px) {
   .team .team__inner {
     width: 100%;
     margin-top: 33%; }
