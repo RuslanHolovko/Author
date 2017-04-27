@@ -3215,8 +3215,7 @@ footer {
     font-size: 38px; }
 
   .sl-slick img {
-    width: 160%;
-    height: 87vh !important; } }
+    width: 160%; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .sl-slick h1 {
