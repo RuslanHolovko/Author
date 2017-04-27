@@ -31,7 +31,7 @@
  //SLICK-SLIDER
 
  $('.sl-slick').slick({
-  autoplay: true,
+  autoplay: false,
   slidesToShow: 1,
   slidesToScroll: 1,
   dots: false,

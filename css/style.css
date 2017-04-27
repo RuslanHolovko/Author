@@ -2904,7 +2904,7 @@ header {
     font-size: 63px;
     display: inline-block;
     position: absolute;
-    top: 153px;
+    top: 20%;
     left: 0;
     right: 0;
     margin: auto;
@@ -2913,7 +2913,7 @@ header {
   .sl-slick p {
     position: absolute;
     display: inline-block;
-    top: 252px;
+    top: 36%;
     font-family: 'OpenSans-Regular';
     font-size: 23px;
     left: 0;
@@ -2925,7 +2925,7 @@ header {
     background: transparent;
     position: absolute;
     color: #fff;
-    top: 405px;
+    top: 55%;
     left: 0;
     right: 0;
     margin: auto;
@@ -3141,6 +3141,25 @@ footer {
 /*\\\\\\\\\\\\\\\MEDIA\\\\\\\\\\\\\\\\*/
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1380px) {
+  .sl-slick h1 {
+    font-size: 46px;
+    width: 100%; }
+  .sl-slick p {
+    font-size: 20px;
+    line-height: 23px; } }
+@media only screen and (max-width: 1200px) {
+  .sl-slick h1 {
+    font-size: 44px; }
+
+  .sl-slick p {
+    font-size: 20px; }
+
+  .sl-slick .learn {
+    font-size: 16px;
+    width: 160px;
+    padding: 7px 0;
+    border: 2px solid #fff; } }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .mobile-inner-header-icon {
@@ -3158,11 +3177,89 @@ footer {
       padding: 14px 100px; }
 
   .sl-slick h1 {
-    font-size: 45px;
-    width: 481px; } }
+    font-size: 43px; }
+  .sl-slick p {
+    font-size: 20px; }
+  .sl-slick .learn {
+    top: 62%;
+    font-size: 16px;
+    width: 160px;
+    padding: 7px 0;
+    border: 2px solid #fff; } }
 /* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .sl-slick h1 {
+    font-size: 32px; }
+  .sl-slick p {
+    font-size: 12px;
+    line-height: 14px;
+    width: 100%; }
+  .sl-slick .learn {
+    font-size: 13px;
+    width: 140px;
+    padding: 7px 0;
+    border: 1px solid #fff;
+    top: 62%; }
+
+  .slick-prev, .slick-next {
+    width: 30px;
+    height: 30px; }
+
+  .slick-prev:before {
+    top: 6px;
+    left: 14px;
+    height: 10px;
+    width: 1px; }
+
+  .slick-prev:after {
+    top: 13px;
+    left: 14px;
+    height: 10px;
+    width: 1px; }
+
+  .slick-next:before {
+    top: 6px;
+    left: 16px;
+    height: 10px;
+    width: 1px; }
+
+  .slick-next:after {
+    top: 13px;
+    left: 16px;
+    height: 10px;
+    width: 1px; } }
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .sl-slick h1 {
+    font-size: 20px; }
+  .sl-slick p {
+    top: 40%;
+    font-size: 10px;
+    line-height: 13px;
+    width: 100%; }
+  .sl-slick .learn {
+    font-size: 10px;
+    width: 100px;
+    padding: 5px 0;
+    border: 1px solid #fff;
+    top: 65%; }
+
+  .slick-prev {
+    left: 10px; }
+
+  .slick-next {
+    right: 10px; }
+
+  .navigation li a {
+    padding: 12px 25px;
+    font-size: 12px; }
+
+  header .logo a {
+    font-size: 35px; } }
 /* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  header .logo a {
+    font-size: 25px; } }
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
