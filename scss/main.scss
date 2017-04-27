@@ -663,7 +663,6 @@ footer{
 
 .sl-slick img {
   width: 200%;
-  height: 100vh;
 }
 
 }
@@ -671,11 +670,10 @@ footer{
 @media only screen and (max-width : 738px){
 .sl-slick img {
   width: 140%;
-  height: 100vh;
 }
 }
 
-@media only screen and (max-width : 598px){
+@media only screen and (max-width : 600px){
 .team .team__inner {
 	width: 100%;
 	margin-top: 33%;
@@ -686,8 +684,7 @@ footer{
 }
 
 .sl-slick img {
-  width: 140%;
-  height: 100vh;
+  width: 250%;
 }
 
 .plans {
