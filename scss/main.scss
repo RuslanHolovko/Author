@@ -668,9 +668,10 @@ footer{
 }
 
 @media only screen and (max-width : 738px){
-.sl-slick img {
-  width: 200%;
-}
+	.sl-slick img {
+		width: 100%;
+		height: 75vh!important;
+	}
 }
 
 @media only screen and (max-width : 600px){
