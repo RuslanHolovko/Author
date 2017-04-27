@@ -3104,7 +3104,7 @@ footer {
   float: right;
   margin-right: 25%; }
 .inner__footer-right input[type=email] {
-  margin-left: 30px; }
+  margin-left: 5%; }
 .inner__footer-right textarea {
   padding: 10px;
   display: block;
