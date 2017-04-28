@@ -718,15 +718,9 @@ footer h2{
 
 }
 
-@media only screen and (max-width : 738px){
-.sl-slick img {
-
-}
-}
-
 @media only screen and (max-width : 610px){
 .team .team__inner {
-	width: 100%;
+	width: 100%!important;
 	margin-top: 33%;
 }
 
@@ -735,7 +729,7 @@ footer h2{
 }
 
 .plans {
-	width: 100%;
+	width: 100%!important;
 	float: right;
 	border-left: 1px solid #ecf0f1;
 	border-right: 1px solid #ecf0f1;
