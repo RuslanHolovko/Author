@@ -1,8 +1,10 @@
   //SCROLL-HEADER
-  var header = new Headhesive('.header');
+
   var options = {
-    offset: 200
+    offset: 800,
   }
+  var header = new Headhesive('.header',options);
+ 
 
   //$(".nav-link").click(function(){
     //$(this).toggleClass('click-nav-link');
